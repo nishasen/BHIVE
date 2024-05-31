@@ -1,0 +1,107 @@
+@import '../../../assets/index.scss';
+
+.mainBanner {
+    height: 28rem;
+    display: flex;
+    justify-content: stretch;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    .titleSection {
+        height: inherit;
+        display: grid;
+        grid-template-columns: auto auto;
+        .background {
+            height: inherit;
+            grid-area: 1/1/2/2;
+            width: 100%;
+        }
+        .title {
+            grid-area: 1/1/2/2;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2rem 4rem;
+            flex-direction: column;
+            h1 {
+                .price {
+                    color: $primary_yellow;
+                } 
+            }
+        } 
+    }
+    .bannerSection {
+        height: inherit;
+        .banner {
+            height: inherit;
+        }
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .mainBanner {
+        .titleSection {
+            .title {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .mainBanner {
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .mainBanner {
+        .titleSection {
+            .title {
+                h1 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .mainBanner {
+        gap: 1rem;
+        height: 15rem;
+        .titleSection {
+            .title {
+                h1 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .mainBanner {
+        gap: 0rem;
+        height: auto;
+        flex-direction: column;
+        .titleSection {
+            .background{ 
+                display: none;
+            }
+            .title {
+                padding: 1rem 2rem;
+                h1 {
+                    font-size: 20px;
+                }
+            }
+        }
+        .bannerSection {
+            height: 15rem;
+            display: flex;
+            justify-content: center;
+            background-color: $primary_yellow;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import "../../../assets/index.scss";
+
+.topicHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .arrow {
+        cursor: pointer;
+        color: $primary_yellow;
+        display: none;
+        &:hover {
+            color: $main-light_yellow;
+        }
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .topicHeader {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .topicHeader {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .topicHeader {
+        font-size: 20px;
+        .arrow {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .topicHeader {
+        font-size: 18px;
+    }
+}

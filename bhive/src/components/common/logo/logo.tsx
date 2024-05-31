@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import CompanyLogo from '../../../assets/images/logo.svg';
+import styles from './logo.module.scss';
 
-export const Logo = () => {
+export const Logo = (): JSX.Element => {
   return (
-    <div>Logo</div>
+      <img src={CompanyLogo} alt="" className={styles.logo} />
   )
 }

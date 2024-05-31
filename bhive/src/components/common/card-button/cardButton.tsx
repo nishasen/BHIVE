@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import styles from './cardButton.module.scss';
 
-export const CardButton = () => {
+export const CardButton = (): JSX.Element => {
   return (
     <div>CardButton</div>
   )

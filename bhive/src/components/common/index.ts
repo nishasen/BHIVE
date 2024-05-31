@@ -7,4 +7,5 @@ export { CardButton } from './card-button/cardButton';
 export { Button } from './button/button';
 export { DistanceChip } from './distance-chip/distanceChip';
 export { SpaceChip } from './space-chip/spaceChip';
-
+export { Container } from './container/container';
+export { TopicHeader } from './topic-header/topicHeader';

@@ -1,0 +1,17 @@
+@import "../../../assets/index.scss";
+
+.header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background: $white;
+}
+
+@media only screen and (max-width: 500px) {
+    .header {
+        padding: 1rem 2rem;
+        height: 72px;
+    }
+}

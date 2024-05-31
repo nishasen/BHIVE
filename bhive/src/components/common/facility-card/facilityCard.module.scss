@@ -1,0 +1,58 @@
+@import '../../../assets/index.scss';
+
+.facilityCard {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.facilityCard:nth-child(1),
+.facilityCard:nth-child(2),
+.facilityCard:nth-child(3), 
+.facilityCard:nth-child(5),
+.facilityCard:nth-child(6),
+.facilityCard:nth-child(7) {
+    border-right: 1px solid $grey_5;
+}
+
+.facilityCard:nth-child(5),
+.facilityCard:nth-child(6),
+.facilityCard:nth-child(7),
+.facilityCard:nth-child(8) {
+    border-top: 1px solid $grey_5;
+}
+
+@media only screen and (max-width: 1180px) {
+    .facilityCard {
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .facilityCard {
+        padding: 1.5rem 0.5rem;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .facilityCard {
+        border-right: none !important;
+        border-top: none !important;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 1rem;
+        background-color: $white;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+
+        &:hover {
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+}

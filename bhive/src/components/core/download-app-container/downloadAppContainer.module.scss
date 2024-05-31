@@ -1,0 +1,91 @@
+@import "../../../assets/index.scss";
+
+.downloadContainer {
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    .downloadImage {
+        grid-area: 1/1/2/2;
+        z-index: 1;
+    }
+    .titleContainer {
+        align-self: flex-end;
+        height: 12rem;
+        background-color: $white;
+        border-radius: 1rem;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+        grid-area: 1/1/2/2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        .titleBox {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem 6rem;
+            width: 60%;
+            .title {
+                color: $grey_2;
+                font-size: 12px;
+            }
+            .downloadAction {
+                display: flex;
+                gap: 1rem;
+            }
+        }       
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .downloadContainer {
+        .downloadImage {
+            height: 15rem;
+        }
+        .titleContainer {
+            align-self: center;
+            .titleBox {
+                padding: 2rem 3rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .downloadContainer {
+        .downloadImage {
+            height: 12rem;
+        }
+        .titleContainer {
+            .titleBox {
+                padding: 2rem 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .downloadContainer {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        .downloadImage {
+            width: auto;
+        }
+        .titleContainer {
+            height: auto;
+            width: 100%;
+            justify-content: center;
+            .titleBox {
+                justify-content: center;
+                flex-direction: row;
+                width: 100%;
+                .title {
+                    display: none;
+                }
+            }
+        }
+    }
+}

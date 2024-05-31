@@ -1,0 +1,10 @@
+@import "../../../assets/index.scss";
+
+.footer {
+    background-color: $footer_background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    color: $footer_text-grey;
+}

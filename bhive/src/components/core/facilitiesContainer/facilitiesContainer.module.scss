@@ -1,0 +1,23 @@
+@import "../../../assets/index.scss";
+
+.facilitiesContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.facilitiesContainer:nth-child(1)
+.facilitiesContainer:nth-child(2)
+.facilitiesContainer:nth-child(3)
+.facilitiesContainer:nth-child(5)
+.facilitiesContainer:nth-child(6)
+.facilitiesContainer:nth-child(7) {
+    border-right: 1px solid $grey_3;
+}
+
+@media only screen and (max-width: 670px) {
+    .facilitiesContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}

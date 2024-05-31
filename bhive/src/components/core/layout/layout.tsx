@@ -1,7 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Footer, Header } from '../../core';
+import { RouteProvider } from '../../../router/routeProvider';
+import styles from './layout.module.scss';
 
-export const Layout = () => {
+export const Layout = (): JSX.Element => {
   return (
-    <div>Layout</div>
+    <div className={styles.layout}>
+      <Header />
+      <RouteProvider />
+      <Footer />
+    </div>
   )
 }

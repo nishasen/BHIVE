@@ -1,0 +1,16 @@
+@import "../../../assets/index.scss";
+
+.contact {
+    display: flex;
+    align-items: center;
+    color: $primary_yellow;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.2rem;
+    border: 2px solid $primary_yellow;
+    cursor: pointer;
+
+    &:hover {
+        color: $main-light_yellow;
+        border-color: $main-light_yellow;
+    }
+}
