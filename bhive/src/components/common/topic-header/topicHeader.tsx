@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import styles from './topicHeader.module.scss';
-import { COLORS } from '../../../assets/styles/colors';
 
 type TopicHeaderProps = {
   header: string,
